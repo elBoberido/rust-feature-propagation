@@ -1,0 +1,21 @@
+[workspace]
+resolver = "2"
+members = [
+    "sys",
+    "base",
+    "comm",
+    "app",
+]
+
+[workspace.package]
+categories = ["playgroud"]
+description = "How to do feature propagation in a Rust workspace"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+rust-version = "1.70"
+version = "0.8.15"
+
+[workspace.dependencies]
+sys = { version = "0.8.15", path = "sys", default-features = false }
+base = { version = "0.8.15", path = "base", default-features = false }
+comm= { version = "0.8.15", path = "comm", default-features = false }

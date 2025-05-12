@@ -1,0 +1,12 @@
+[package]
+name = "sys"
+categories = { workspace = true }
+edition = { workspace = true }
+rust-version = { workspace = true }
+version = { workspace = true }
+
+[features]
+default = ["std"]
+std = []
+
+[dependencies]

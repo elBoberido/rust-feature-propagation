@@ -1,0 +1,21 @@
+[package]
+name = "comm"
+categories = { workspace = true }
+edition = { workspace = true }
+rust-version = { workspace = true }
+version = { workspace = true }
+
+[features]
+default = [
+    "sys/default",
+    "base/default",
+    "std",
+]
+std = [
+    "sys/std",
+    "base/std",
+]
+
+[dependencies]
+sys = { workspace = true }
+base = { workspace = true }

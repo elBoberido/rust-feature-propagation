@@ -1,0 +1,24 @@
+[package]
+name = "app"
+categories = { workspace = true }
+edition = { workspace = true }
+rust-version = { workspace = true }
+version = { workspace = true }
+
+[features]
+default = [
+    "sys/default",
+    "base/default",
+    "comm/default",
+    "std",
+]
+std = [
+    "sys/std",
+    "base/std",
+    "comm/std",
+]
+
+[dependencies]
+sys = { workspace = true }
+base = { workspace = true }
+comm = { workspace = true }
